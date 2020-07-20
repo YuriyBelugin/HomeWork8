@@ -38,11 +38,11 @@ public class Main {
         for (int i = 0; i < nums.size(); i++) {
             Integer tempInt = nums.get(i);
 
-            if (!letters.containsKey(tempInt)) {
-                letters.put(tempInt,1);
-            }
-            else if(letters.containsValue(3)) {
+            if(letters.containsValue(3)) {
                 break;
+            }
+            else if (!letters.containsKey(tempInt)) {
+                letters.put(tempInt,1);
             }
             else if(letters.containsValue(1)){
                 letters.put(tempInt, letters.get(tempInt)+1);
