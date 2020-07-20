@@ -37,6 +37,7 @@ public class Main {
 
         for (int i = 0; i < nums.size(); i++) {
             Integer tempInt = nums.get(i);
+
             if (!letters.containsKey(tempInt)) {
                 letters.put(tempInt,1);
             }
@@ -44,6 +45,9 @@ public class Main {
                 break;
             }
             else if(letters.containsValue(1)){
+                letters.put(tempInt, letters.get(tempInt)+1);
+            }
+            else if(letters.containsValue(2)){
                 letters.put(tempInt, letters.get(tempInt)+1);
             }
 
