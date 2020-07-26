@@ -11,29 +11,10 @@ public class Main {
         Map<Integer,Integer> letters=new HashMap<>();
 
         ArrayList<Integer> nums = new ArrayList<>();
-            nums.add(random.getRandom());
-            nums.add(random.getRandom());
-            nums.add(random.getRandom());
-            nums.add(random.getRandom());
-            nums.add(random.getRandom());
-            nums.add(random.getRandom());
-            nums.add(random.getRandom());
-            nums.add(random.getRandom());
-            nums.add(random.getRandom());
-            nums.add(random.getRandom());
-            nums.add(random.getRandom());
-            nums.add(random.getRandom());
-            nums.add(random.getRandom());
-            nums.add(random.getRandom());
-            nums.add(random.getRandom());
-            nums.add(random.getRandom());
-            nums.add(random.getRandom());
-            nums.add(random.getRandom());
-            nums.add(random.getRandom());
-            nums.add(random.getRandom());
-            nums.add(random.getRandom());
 
-        System.out.println(nums);
+        for (int i=0; i<201; i++) {
+            nums.add(random.getRandom());
+        }
 
         for (int i = 0; i < nums.size(); i++) {
             Integer tempInt = nums.get(i);
